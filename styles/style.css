@@ -6,15 +6,17 @@ body {
   padding: 8px;
   font-family: poppinsregular;
 }
-.page{
-  width: 1255px;
-  margin: 30px auto 0px;
+
+header {
+  display: block;
+  margin: 30px;
+ 
 }
-nav{
-   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 ul {
   display: flex;
@@ -24,6 +26,7 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 a {
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -31,15 +34,30 @@ a {
 
 a:hover {
   color: rgb(255, 109, 5);
-  transition: 0.5ms all;
-}
-main {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  transition: 0.5ms;
 }
 
-#btnnav-cadastro{
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  margin: 0px;
+  padding-top: 50px;
+  
+}
+h2{
+  display: flex;
+  flex-direction: column;
+  gap:35px;
+}
+
+
+.img-sobre{
+  padding-right: 100px;
+}
+
+
+#btnnav-cadastro {
   border: 2px solid rgb(255, 109, 5);
   padding: 10px;
   border-radius: 15px;
@@ -47,10 +65,30 @@ main {
   border-left: 2px;
   border-width: 2px;
 }
-#btnnav-cadastro:hover{
+.btn {
+  
+  color: white;
+  background: none;
+  border: 2px solid rgb(255, 109, 5);
+  padding: 10px;
+  border-radius: 15px;
+  border-right: 2px;
+  border-left: 2px;
+  border-width: 2px;
+}
+
+.btn:hover {
+  font-weight: bolder;
+  background-color: rgb(255, 109, 5);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+
+#btnnav-cadastro:hover {
   background-color: rgb(255, 109, 5);
   color: white;
-  transition: 0.5ms all;
+  
 }
 
 /*antigos codigos para baixo*/
@@ -94,6 +132,7 @@ form [type="submit"]:hover {
 
 input,
 textarea {
+  padding-top: 0;
   margin-top: 20px;
   height: 20px;
   padding: 15px;
@@ -103,16 +142,21 @@ textarea {
 }
 
 textarea {
-  padding-bottom: 50%;
+  padding-bottom: 40%;
 }
 
 :-moz-placeholder {
   font-family: Arial;
 }
 
-footer {
-  background-color: rgb(33, 31, 31);
+#footer {
   text-align: center;
+  border-top: 1px solid #333;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  position: fixed;
+  width: 100%;
 }
 
 .prototipo {
